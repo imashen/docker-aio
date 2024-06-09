@@ -3,6 +3,6 @@
 
 or
 
-`curl -fsSL https://cdn.jsdelivr.net/gh/imashen/docker-autoinstall/docker | bash -s docker`
+`curl -fsSL https://fastly.jsdelivr.net/gh/imashen/docker-autoinstall/docker | bash -s docker`
 
 ### Powered by `Aliyun`
