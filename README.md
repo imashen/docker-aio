@@ -10,7 +10,6 @@ or
 另附自建Docker加速源 `docker.13140521.xyz`
 
 ```
-
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
@@ -19,5 +18,4 @@ sudo tee /etc/docker/daemon.json <<-'EOF'
 EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
-
 ```
