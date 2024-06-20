@@ -21,7 +21,7 @@
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
-  "registry-mirrors": ["docker.13140521.xyz"]
+  "registry-mirrors": ["https://docker.13140521.xyz"]
 }
 EOF
 sudo systemctl daemon-reload
