@@ -1,15 +1,16 @@
 # 说明
 本脚本完全为官方脚本，进当作加速用途，无后门</br>
-可直接访问 https://get.13140521.xyz 查看脚本内容
+可直接访问 https://docker.13140521.xyz/install 查看脚本内容
 # How To Install | 如何使用
 
-`curl -fsSL https://get.13140521.xyz | bash -s docker --mirror Aliyun`
+`curl -fsSL https://docker.13140521.xyz/install | bash -s docker --mirror Aliyun`
 
 Powered by `Aliyun`
 
 
-## 自建Docker加速源 
-### `docker.13140521.xyz`
+## Docker加速源 
+`docker.13140521.xyz`
+
 可通过创建docker daemon.json的方式更改加速源
 
 ```
