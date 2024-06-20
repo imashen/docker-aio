@@ -1,13 +1,16 @@
-# How To Install
-`curl -fsSL https://cdn.jsdelivr.net/gh/imashen/docker-autoinstall/docker | bash -s docker`
+# 说明
+本脚本完全为官方脚本，进当作加速用途，无后门</br>
+可直接访问 https://get.13140521.xyz 查看脚本内容
+# How To Install | 如何使用
 
-or
+`curl -fsSL https://get.13140521.xyz | bash -s docker --mirror Aliyun`
 
-`curl -fsSL https://fastly.jsdelivr.net/gh/imashen/docker-autoinstall/docker | bash -s docker`
+Powered by `Aliyun`
 
-### Powered by `Aliyun`
 
-另附自建Docker加速源 `docker.13140521.xyz`
+## 自建Docker加速源 
+### `docker.13140521.xyz`
+可通过创建docker daemon.json的方式更改加速源
 
 ```
 sudo mkdir -p /etc/docker
