@@ -1,7 +1,7 @@
 # 说明
 本脚本完全为官方脚本，进当作加速用途，无后门</br>
 可直接访问 https://docker.13140521.xyz/install 查看脚本内容
-# How To Install | 如何使用
+## How To Install | 如何使用
 `curl -fsSL https://docker.13140521.xyz/install | bash -s docker --mirror Aliyun`
 
 可选参数
@@ -14,6 +14,11 @@
 
 ## Docker加速源 
 `docker.13140521.xyz`
+
+## 使用方法
+<details>
+<summary>🐧Ubuntu/Debian/CentOS系列</summary>
+  
 ### 如果您正在使用Linux系统如 Ubuntu/Debian/CentOS系列 可通过如下步骤进行替换更改：
 通过创建docker-daemon.json的方式更改加速源
 
@@ -27,8 +32,12 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
+<br />
+</details>
 
 
+<details>
+<summary>🗄群晖 DSM</summary>
 
 ### 如果您正在使用群晖 DSM，可通过如下步骤进行替换更改：
 
@@ -48,3 +57,6 @@ sudo systemctl restart docker
 
 **4.设置默认镜像源：**
 在镜像源列表中，找到刚刚添加的镜像源，点击其右侧的 三点 按钮，选择 设为默认。
+
+<br />
+</details>
