@@ -1,8 +1,9 @@
 # 说明
-本脚本完全为官方脚本，进当作加速用途，无后门。</br>
+本脚本为官方脚本，仅作加速用途，无后门，且仅作为备份仓库。</br>
 可直接访问 https://docker.13140521.xyz/install 查看脚本内容。</br>
-使用时请遵守相应的法律法规。如果侵犯到您的权益，请联系仓库所有者进行删除。
-## How To Install | 如何使用
+使用时请遵守相应的法律法规。如果侵犯到您的权益，请联系 [Azimiao](https://github.com/Azimiao) 进行处理。
+
+## How To Install Docker | 如何安装 Docker
 `curl -fsSL https://docker.13140521.xyz/install | bash -s docker --mirror Aliyun`
 
 可选参数
@@ -13,10 +14,10 @@
 ```
 
 
-## Docker加速源 
+## DockerHub加速源 
 `docker.13140521.xyz`
 
-## 使用方法
+## 加速源使用方法
 <details>
 <summary>🐧Ubuntu/Debian/CentOS系列</summary>
   
@@ -54,7 +55,7 @@ sudo systemctl restart docker
 
 在弹出的窗口中，选择 镜像 标签。
 
-在 镜像 标签下，点击 添加 按钮，输入新的镜像源 URL， http://docker.13140521.xyz
+在 镜像 标签下，点击 添加 按钮，输入新的镜像源 URL：`http://docker.13140521.xyz`
 
 **4.设置默认镜像源：**
 在镜像源列表中，找到刚刚添加的镜像源，点击其右侧的 三点 按钮，选择 设为默认。
