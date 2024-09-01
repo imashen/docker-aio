@@ -1,7 +1,7 @@
 # 说明
-本脚本为官方脚本，仅作加速用途，无后门。</br>
+本脚本为官方脚本，仅作加速用途，无后门，且仅作为备份仓库。</br>
 可直接访问 https://docker.13140521.xyz/install 查看脚本内容。</br>
-使用时请遵守相应的法律法规。如果侵犯到您的权益，请联系仓库所有者进行删除。
+使用时请遵守相应的法律法规。如果侵犯到您的权益，请联系 [Azimiao](https://github.com/Azimiao) 进行处理。
 
 ## How To Install Docker | 如何安装 Docker
 `curl -fsSL https://docker.13140521.xyz/install | bash -s docker --mirror Aliyun`
