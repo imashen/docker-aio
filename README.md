@@ -1,64 +1,75 @@
 # 说明
-本脚本为官方脚本，仅作加速用途，无后门，且仅作为备份仓库。</br>
-可直接访问 https://docker.13140521.xyz/install 查看脚本内容。</br>
-使用时请遵守相应的法律法规。如果侵犯到您的权益，请联系 [Azimiao](https://github.com/Azimiao) 进行处理。
 
-## How To Install Docker | 如何安装 Docker
-`curl -fsSL https://docker.13140521.xyz/install | bash -s docker --mirror Aliyun`
+本脚本为官方脚本，仅作加速用途，无后门，且仅作为备份仓库。  
+可直接访问 https://docker.13140521.xyz/install 查看脚本内容。  
+使用时请遵守相应的法律法规。如果侵犯到您的权益，请联系 [Azimiao](https://github.com/Azimiao) | [imashen](https://github.com/imashen) 进行处理  
 
-可选参数
+## 安装脚本使用
+
+```bash
+curl -fsSL https://docker.13140521.xyz/install | bash -s docker --mirror Aliyun
 ```
+
+可选参数:
+
+```text
 --channel <stable|test>
 --version <VERSION>
 --mirror <Aliyun|AzureChinaCloud>
 ```
 
+## Docker加速源使用
 
-## DockerHub加速源 
-`docker.13140521.xyz`
+> 请注意，在使用任何加速镜像之前，请确保该加速服务符合您的使用需求，并且遵守相关的使用条款和服务协议。
 
-## 加速源使用方法
-<details>
-<summary>🐧Ubuntu/Debian/CentOS系列</summary>
-  
-### 如果您正在使用Linux系统如 Ubuntu/Debian/CentOS系列 可通过如下步骤进行替换更改：
-通过创建docker-daemon.json的方式更改加速源
+加速源域名: `*.13140521.xyz`
 
+以下是一些常见的Docker镜像源及其对应的加速域名：
+
+| 源站域名            | 加速域名                   |
+|-------------------|--------------------------|
+| quay.io           | quay.13140521.xyz        |
+| gcr.io            | gcr.13140521.xyz         |
+| ghcr.io           | ghcr.13140521.xyz        |
+| k8s.gcr.io        | k8s-gcr.13140521.xyz     |
+| registry.k8s.io   | k8s.13140521.xyz         |
+| docker.cloudsmith.io | cloudsmith.13140521.xyz |
+| mcr.microsoft.com | mcr.13140521.xyz         |
+| docker.elastic.co | elastic.13140521.xyz    |
+
+使用加速源时，请将上述表中的加速域名替换到您的Docker配置中。例如，如果您想使用`quay.io`的加速镜像，您应当将所有的`quay.io`引用替换为`quay.13140521.xyz`
+
+
+---
+
+### 替换镜像源的方法示例
+#### 方法一：修改Docker配置文件
+1.编辑Docker配置文件：
+打开Docker的配置文件（通常位于/etc/docker/daemon.json）：
+```bash
+sudo nano /etc/docker/daemon.json
 ```
-sudo mkdir -p /etc/docker
-sudo tee /etc/docker/daemon.json <<-'EOF'
+2.添加或修改镜像源：
+添加或修改配置文件中的registry-mirrors字段：
+```json
 {
-  "registry-mirrors": ["https://docker.13140521.xyz"]
+  "registry-mirrors": [
+    "https://docker.13140521.xyz",
+  ]
 }
-EOF
-sudo systemctl daemon-reload
+```
+3.重启Docker服务:
+保存配置文件并重启Docker服务：
+```bash
 sudo systemctl restart docker
 ```
-<br />
-</details>
-
-
-<details>
-<summary>🗄群晖 DSM</summary>
-
-### 如果您正在使用群晖 DSM，可通过如下步骤进行替换更改：
-
-**1.打开 Docker 套件：**
-在主菜单中找到并打开 Docker 套件。
-
-**2.访问注册表设置：**
-打开 Docker 套件后，点击左侧的 注册表 标签。
-
-**3.添加新的镜像源：**
-
-在 注册表 页面中，点击右上角的 设置 按钮。
-
-在弹出的窗口中，选择 镜像 标签。
-
-在 镜像 标签下，点击 添加 按钮，输入新的镜像源 URL：`http://docker.13140521.xyz`
-
-**4.设置默认镜像源：**
-在镜像源列表中，找到刚刚添加的镜像源，点击其右侧的 三点 按钮，选择 设为默认。
-
-<br />
-</details>
+#### 方法二：使用Docker CLI命令时替换
+拉取/查看镜像时指定镜像源：
+例如，拉取quay.io上的镜像时指定加速源：
+```bash
+docker pull quay.13140521.xyz/library/image_name:tag
+```
+例如，查看quay.io上的镜像信息时指定加速源：
+```bash
+docker inspect quay.13140521.xyz/library/image_name:tag
+```
