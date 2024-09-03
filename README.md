@@ -1,9 +1,7 @@
 # README.md
-
 - ENG [English](README.md)
 - CHS [简体中文](/README_CHS.md)
-- 
-- 
+
 # Instructions
 This accelerated mirror service is not available for users in Asia. Please check and comply with local laws and regulations.
 When using this service, ensure you comply with relevant laws and regulations. If your rights have been infringed upon, please contact [Azimiao](https://github.com/Azimiao) | [imashen](https://github.com/imashen) for resolution.
