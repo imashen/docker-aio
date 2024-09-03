@@ -1,3 +1,7 @@
+# README.md
+- ENG [English](README.md)
+- CHS [简体中文](/README_CHS.md)
+
 # 说明
 本加速镜像不对亚洲用户开放服务，请查询并遵守当地的法律法规
 使用时请遵守相应的法律法规。如果侵犯到您的权益，请联系 [Azimiao](https://github.com/Azimiao) | [imashen](https://github.com/imashen) 进行处理  
