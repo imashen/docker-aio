@@ -11,7 +11,7 @@ When using this service, ensure you comply with relevant laws and regulations. I
 ```bash
 curl -fsSL https://docker.13140521.xyz/install | bash -s docker --mirror Aliyun
 
-可选参数:
+Options:
 
 ```text
 --channel <stable|test>
@@ -45,6 +45,14 @@ When using an accelerated mirror, replace the original domain in your Docker con
 
 ### Example Methods for Replacing Mirror Sources
 #### Method 1: Modify Docker Configuration File
+
+> Note: In the new version, the configuration file is no longer named daemon.json, but instead it is called daemon.conf. Please make adjustments according to the actual version to avoid encountering issues.
+> If you do not make the necessary changes, you may face the following error:
+> ```
+> Job for docker.service failed because the control process exited with error code.
+> See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.
+> ```
+
 1.Edit the Docker configuration file:   
 Open the Docker configuration file (usually located at /etc/docker/daemon.json):
 ```bash
@@ -62,6 +70,7 @@ Add or modify the registry-mirrors field in the configuration file:
 3.Restart the Docker service:   
 Save the configuration file and restart the Docker service:
 ```bash
+sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
 #### Method 2: Replace Using Docker CLI Commands

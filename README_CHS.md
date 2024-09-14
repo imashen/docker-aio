@@ -46,6 +46,14 @@ curl -fsSL https://docker.13140521.xyz/install | bash -s docker --mirror Aliyun
 
 ### 替换镜像源的方法示例
 #### 方法一：修改Docker配置文件
+
+> 请注意，新版本中已不再名为daemon.json，而是daemon.conf，请根据实际版本进行改动！
+> 如果您没有改为正确的文件格式将遇到如下错误：
+> ```
+> Job for docker.service failed because the control process exited with error code.
+> See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.
+> ```
+
 1.编辑Docker配置文件：
 打开Docker的配置文件（通常位于/etc/docker/daemon.json）：
 ```bash
@@ -63,6 +71,7 @@ sudo nano /etc/docker/daemon.json
 3.重启Docker服务:
 保存配置文件并重启Docker服务：
 ```bash
+sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
 #### 方法二：使用Docker CLI命令时替换
