@@ -46,7 +46,7 @@ When using an accelerated mirror, replace the original domain in your Docker con
 ### Example Methods for Replacing Mirror Sources
 #### Method 1: Modify Docker Configuration File
 
-> Note: In the new version, the configuration file is no longer named daemon.json, but instead it is called daemon.conf. Please make adjustments according to the actual version to avoid encountering issues.
+> Note: In some versions, the configuration file is not named `daemon.json` but rather `daemon.conf`. Please adjust according to the actual version!
 > If you do not make the necessary changes, you may face the following error:
 > ```
 > Job for docker.service failed because the control process exited with error code.

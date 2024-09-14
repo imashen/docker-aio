@@ -47,7 +47,7 @@ curl -fsSL https://docker.13140521.xyz/install | bash -s docker --mirror Aliyun
 ### 替换镜像源的方法示例
 #### 方法一：修改Docker配置文件
 
-> 请注意，新版本中已不再名为daemon.json，而是daemon.conf，请根据实际版本进行改动！
+> 请注意，一些版本中并非名为`daemon.json`，而是`daemon.conf`，请根据实际版本进行改动！
 > 如果您没有改为正确的文件格式将遇到如下错误：
 > ```
 > Job for docker.service failed because the control process exited with error code.
