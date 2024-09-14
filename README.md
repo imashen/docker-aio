@@ -63,7 +63,7 @@ Add or modify the registry-mirrors field in the configuration file:
 ```json
 {
   "registry-mirrors": [
-    "https://docker.13140521.xyz",
+    "https://docker.13140521.xyz"
   ]
 }
 ```

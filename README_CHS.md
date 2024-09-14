@@ -64,7 +64,7 @@ sudo nano /etc/docker/daemon.json
 ```json
 {
   "registry-mirrors": [
-    "https://docker.13140521.xyz",
+    "https://docker.13140521.xyz"
   ]
 }
 ```
