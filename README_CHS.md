@@ -26,6 +26,8 @@ curl -fsSL https://docker.13140521.xyz/install | bash -s docker --mirror Aliyun
 
 加速源域名: `*.13140521.xyz`
 
+## ⚠️请使用docker.hutu.im代替docker.13140521.xyz!!! 2025.02.22
+
 以下是一些常见的Docker镜像源及其对应的加速域名：
 
 | 源站域名            | 加速域名                   |
