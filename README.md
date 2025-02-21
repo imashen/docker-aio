@@ -1,5 +1,3 @@
-## ⚠️USE docker.hutu.im insted of docker.13140521.xyz!!! 2025.02.22
-
 # Language
 - ENG [English](README.md)
 - CHS [简体中文](/README_CHS.md)
@@ -26,6 +24,8 @@ Options:
 > Please note that before using any accelerated mirrors, ensure that the acceleration service meets your needs and that you comply with relevant terms of use and service agreements.
 
 Accelerated domain: *.13140521.xyz
+
+## ⚠️USE docker.hutu.im insted of docker.13140521.xyz!!! 2025.02.22
 
 Below are some common Docker mirror sources and their corresponding accelerated domains:
 
